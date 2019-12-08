@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: http://turgayh.github.io/sitemap.xml
