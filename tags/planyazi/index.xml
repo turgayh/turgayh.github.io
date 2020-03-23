@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hakan Turgay</title>
-    <link>https://turgayh.github.io/</link>
-    <description>Recent content on Hakan Turgay</description>
+    <title>plan,yazi on Hakan Turgay</title>
+    <link>https://turgayh.github.io/tags/planyazi/</link>
+    <description>Recent content in plan,yazi on Hakan Turgay</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Mon, 23 Mar 2020 22:44:28 +0300</lastBuildDate>
     
-	<atom:link href="https://turgayh.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://turgayh.github.io/tags/planyazi/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,24 +18,6 @@
       
       <guid>https://turgayh.github.io/posts/2020/03/yazi-planlari/</guid>
       <description> Proje Tanitimi  React ve .netCore ile CRUD tabanli proje. Uygulamanin temel islevi uzerine Kullanilan teknolojiler : Docker , ReactJS, .netCore , MongoDB. kullanilan ortamlar : VS2019, VS Code ,Docker Desktop, Node  Bolum 1 Backend ASP.netcore webapi projesinin kurulumu  ilk asama yapinlandirmalari CORS yapilandirmasi  MongoDB kurulumu  localde docker uzeirnde mongodb olusturma ilk db ve icersine collection olusturma ornek insert islemleri ornek okuma islemleri  ASP.netcore ile mongodb kullanimi  mongodb yapilandirma adimlari Ddatabase: okuma , guncelleme ve ekleme servisleri eklenmesi controller yazilmasi kontrol edilmesi kapanis :D  Bolum 2 Frontend React Projesinin yapilandirirmasi  gerekli programlarim kurulu olup olmadigi kontrolu typescript destekli bir proje olusturma Kaynak  Onyuz  Anaekran ve islevler Component sinifi basit bir kullanim list halinde datayi alalim listelenen datadan data silme data ekleme update butonu [ekleme ve silme islemlerini barindiran yapida]  Bolum 3 Loglama yapilandirmasi Backend Log4Net Frontend [&amp;ldquo;&amp;rdquo;] Bolum 4 Unit Test Yazma </description>
-    </item>
-    
-    <item>
-      <title>Ilk</title>
-      <link>https://turgayh.github.io/posts/2020/03/ilk/</link>
-      <pubDate>Mon, 23 Mar 2020 01:03:26 +0300</pubDate>
-      
-      <guid>https://turgayh.github.io/posts/2020/03/ilk/</guid>
-      <description> hello </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://turgayh.github.io/resume/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://turgayh.github.io/resume/</guid>
-      <description>body,main section p {color: initial;}h1,header .name {color: initial;}h2,header .profession {color: initial;}.section-header {border-bottom-color: initial;}.fa {color: initial;}body {background: initial;}CV - Hakan TurgayHakan TurgaySoftware EngineerA confident, self-motivated software engineer with 2 years of experience in full-stack application development. A deep researcher and a passionate learner in every aspect of his life, with good analytical and verbal skills.</description>
     </item>
     
   </channel>
