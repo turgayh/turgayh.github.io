@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>ASP.NET Core</title>
+      <title>Asp.net Core</title>
       <link>https://turgayh.github.io/tags/asp.net-core/</link>
       <pubDate>Thu, 26 Mar 2020 23:08:27 +0300</pubDate>
       
@@ -57,11 +57,29 @@
     </item>
     
     <item>
+      <title>Plan</title>
+      <link>https://turgayh.github.io/tags/plan/</link>
+      <pubDate>Mon, 23 Mar 2020 22:44:28 +0300</pubDate>
+      
+      <guid>https://turgayh.github.io/tags/plan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>React</title>
       <link>https://turgayh.github.io/tags/react/</link>
       <pubDate>Thu, 26 Mar 2020 23:08:27 +0300</pubDate>
       
       <guid>https://turgayh.github.io/tags/react/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Untagged</title>
+      <link>https://turgayh.github.io/tags/untagged/</link>
+      <pubDate>Mon, 23 Mar 2020 01:03:26 +0300</pubDate>
+      
+      <guid>https://turgayh.github.io/tags/untagged/</guid>
       <description></description>
     </item>
     
@@ -75,29 +93,11 @@
     </item>
     
     <item>
-      <title>plan</title>
-      <link>https://turgayh.github.io/tags/plan/</link>
-      <pubDate>Mon, 23 Mar 2020 22:44:28 +0300</pubDate>
-      
-      <guid>https://turgayh.github.io/tags/plan/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>yazi</title>
+      <title>Yazi</title>
       <link>https://turgayh.github.io/tags/yazi/</link>
       <pubDate>Mon, 23 Mar 2020 22:44:28 +0300</pubDate>
       
       <guid>https://turgayh.github.io/tags/yazi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>untagged</title>
-      <link>https://turgayh.github.io/tags/untagged/</link>
-      <pubDate>Mon, 23 Mar 2020 01:03:26 +0300</pubDate>
-      
-      <guid>https://turgayh.github.io/tags/untagged/</guid>
       <description></description>
     </item>
     

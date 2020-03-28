@@ -3,68 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://turgayh.github.io/tags/asp.net-core/</loc>
-    <lastmod>2020-03-26T23:08:27+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://turgayh.github.io/tags/css/</loc>
-    <lastmod>2020-03-26T23:08:27+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://turgayh.github.io/tags/docker/</loc>
-    <lastmod>2020-03-26T23:08:27+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://turgayh.github.io/</loc>
-    <lastmod>2020-03-26T23:08:27+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://turgayh.github.io/tags/html/</loc>
-    <lastmod>2020-03-26T23:08:27+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://turgayh.github.io/tags/mongodb/</loc>
-    <lastmod>2020-03-26T23:08:27+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://turgayh.github.io/posts/</loc>
-    <lastmod>2020-03-26T23:08:27+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://turgayh.github.io/tags/react/</loc>
-    <lastmod>2020-03-26T23:08:27+03:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://turgayh.github.io/posts/2020/03/react-ve-asp.net-core-kullanarak-crud-tabanli-liste-uygulamasi/</loc>
     <lastmod>2020-03-26T23:08:27+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://turgayh.github.io/tags/</loc>
-    <lastmod>2020-03-26T23:08:27+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://turgayh.github.io/tags/web/</loc>
-    <lastmod>2020-03-26T23:08:27+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://turgayh.github.io/tags/plan/</loc>
-    <lastmod>2020-03-23T22:44:28+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://turgayh.github.io/tags/yazi/</loc>
-    <lastmod>2020-03-23T22:44:28+03:00</lastmod>
   </url>
   
   <url>
@@ -78,17 +18,90 @@
   </url>
   
   <url>
-    <loc>https://turgayh.github.io/tags/untagged/</loc>
-    <lastmod>2020-03-23T01:03:26+03:00</lastmod>
+    <loc>https://turgayh.github.io/resume/</loc>
   </url>
   
   <url>
-    <loc>https://turgayh.github.io/resume/</loc>
+    <loc>https://turgayh.github.io/tags/asp.net-core/</loc>
+    <lastmod>2020-03-26T23:08:27+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://turgayh.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://turgayh.github.io/tags/css/</loc>
+    <lastmod>2020-03-26T23:08:27+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://turgayh.github.io/tags/docker/</loc>
+    <lastmod>2020-03-26T23:08:27+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://turgayh.github.io/</loc>
+    <lastmod>2020-03-26T23:08:27+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://turgayh.github.io/tags/html/</loc>
+    <lastmod>2020-03-26T23:08:27+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://turgayh.github.io/tags/mongodb/</loc>
+    <lastmod>2020-03-26T23:08:27+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://turgayh.github.io/tags/plan/</loc>
+    <lastmod>2020-03-23T22:44:28+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://turgayh.github.io/posts/</loc>
+    <lastmod>2020-03-26T23:08:27+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://turgayh.github.io/tags/react/</loc>
+    <lastmod>2020-03-26T23:08:27+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://turgayh.github.io/tags/</loc>
+    <lastmod>2020-03-26T23:08:27+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://turgayh.github.io/tags/untagged/</loc>
+    <lastmod>2020-03-23T01:03:26+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://turgayh.github.io/tags/web/</loc>
+    <lastmod>2020-03-26T23:08:27+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://turgayh.github.io/tags/yazi/</loc>
+    <lastmod>2020-03-23T22:44:28+03:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>
