@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Hakan Turgay</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 26 Mar 2020 23:08:27 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 31 Mar 2020 00:54:21 +0300</lastBuildDate>
     
 	<atom:link href="https://turgayh.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Microservices</title>
+      <link>https://turgayh.github.io/posts/2020/03/microservices/</link>
+      <pubDate>Tue, 31 Mar 2020 00:54:21 +0300</pubDate>
+      
+      <guid>https://turgayh.github.io/posts/2020/03/microservices/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>React ve ASP.NET core kullanarak CRUD tabanli liste uygulamasi</title>
