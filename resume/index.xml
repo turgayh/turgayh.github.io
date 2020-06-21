@@ -1,23 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Resumes on Hakan Turgay</title>
-    <link>https://turgayh.github.io/resume/</link>
-    <description>Recent content in Resumes on Hakan Turgay</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;/a&gt;</copyright>
-    
-	<atom:link href="https://turgayh.github.io/resume/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title></title>
-      <link>https://turgayh.github.io/resume/dist/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://turgayh.github.io/resume/dist/</guid>
-      <description>body, main section p { color: initial; } h1, header .name { color: initial; } h2, header .profession { color: initial; } .section-header { border-bottom-color: initial; } .fa { color: initial; } body { background: initial; }  CV - Hakan TurgayHakan TurgaySoftware EngineerA confident, self-motivated software engineer with 2 years of experience in full-stack application development. A deep researcher and a passionate learner in every aspect of his life, with good analytical and verbal skills.</description>
-    </item>
-    
-  </channel>
-</rss>
