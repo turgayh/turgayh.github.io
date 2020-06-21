@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Hakan Turgay ">
+<meta name="description" content=" Proje Tanitimi  React ve .netCore ile CRUD tabanli proje. Uygulamanin temel islevi uzerine Kullanilan teknolojiler : Docker , ReactJS, .netCore , MongoDB. kullanilan ortamlar : VS2019, VS Code ,Docker Desktop, Node  Bolum 1 Backend ASP.netcore webapi projesinin kurulumu  ilk asama yapinlandirmalari CORS yapilandirmasi  MongoDB kurulumu  localde docker uzeirnde mongodb olusturma ilk db ve icersine collection olusturma ornek insert islemleri ornek okuma islemleri  ASP.netcore ile mongodb kullanimi  mongodb yapilandirma adimlari Ddatabase: okuma , guncelleme ve ekleme servisleri eklenmesi controller yazilmasi kontrol edilmesi kapanis :D  Bolum 2 Frontend React Projesinin yapilandirirmasi  gerekli programlarim kurulu olup olmadigi kontrolu typescript destekli bir proje olusturma Kaynak  Onyuz  Anaekran ve islevler Component sinifi basit bir kullanim list halinde datayi alalim listelenen datadan data silme data ekleme update butonu [ekleme ve silme islemlerini barindiran yapida]  Bolum 3 Loglama yapilandirmasi Backend Log4Net Frontend [&amp;ldquo;&amp;rdquo;] Bolum 4 Unit Test Yazma " />
+<meta name="keywords" content="Go Language-, Python, ReactJS, .NET Core, Testing, plan, yazi" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="#252627" />
+<link rel="canonical" href="https://turgayh.github.io/posts/2020/03/yazi-planlari/" />
+
+
+    <title>
+        
+            Yazi Planlari :: Hakan Turgay 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://turgayh.github.io/main.dede02da9537a98158079c023e83573e18127834838ef08172acce888341a797.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://turgayh.github.io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://turgayh.github.io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://turgayh.github.io/favicon-16x16.png">
+    <link rel="manifest" href="https://turgayh.github.io/site.webmanifest">
+    <link rel="mask-icon" href="https://turgayh.github.io/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="https://turgayh.github.io/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+
+
+
+<meta itemprop="name" content="Yazi Planlari">
+<meta itemprop="description" content=" Proje Tanitimi  React ve .netCore ile CRUD tabanli proje. Uygulamanin temel islevi uzerine Kullanilan teknolojiler : Docker , ReactJS, .netCore , MongoDB. kullanilan ortamlar : VS2019, VS Code ,Docker Desktop, Node  Bolum 1 Backend ASP.netcore webapi projesinin kurulumu  ilk asama yapinlandirmalari CORS yapilandirmasi  MongoDB kurulumu  localde docker uzeirnde mongodb olusturma ilk db ve icersine collection olusturma ornek insert islemleri ornek okuma islemleri  ASP.netcore ile mongodb kullanimi  mongodb yapilandirma adimlari Ddatabase: okuma , guncelleme ve ekleme servisleri eklenmesi controller yazilmasi kontrol edilmesi kapanis :D  Bolum 2 Frontend React Projesinin yapilandirirmasi  gerekli programlarim kurulu olup olmadigi kontrolu typescript destekli bir proje olusturma Kaynak  Onyuz  Anaekran ve islevler Component sinifi basit bir kullanim list halinde datayi alalim listelenen datadan data silme data ekleme update butonu [ekleme ve silme islemlerini barindiran yapida]  Bolum 3 Loglama yapilandirmasi Backend Log4Net Frontend [&ldquo;&rdquo;] Bolum 4 Unit Test Yazma ">
+
+
+<meta itemprop="datePublished" content="2020-03-23T22:44:28&#43;03:00" />
+<meta itemprop="dateModified" content="2020-03-23T22:44:28&#43;03:00" />
+<meta itemprop="wordCount" content="141">
+
+
+
+<meta itemprop="keywords" content="plan,yazi," />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://turgayh.github.io"/>
+
+<meta name="twitter:title" content="Yazi Planlari"/>
+<meta name="twitter:description" content=" Proje Tanitimi  React ve .netCore ile CRUD tabanli proje. Uygulamanin temel islevi uzerine Kullanilan teknolojiler : Docker , ReactJS, .netCore , MongoDB. kullanilan ortamlar : VS2019, VS Code ,Docker Desktop, Node  Bolum 1 Backend ASP.netcore webapi projesinin kurulumu  ilk asama yapinlandirmalari CORS yapilandirmasi  MongoDB kurulumu  localde docker uzeirnde mongodb olusturma ilk db ve icersine collection olusturma ornek insert islemleri ornek okuma islemleri  ASP.netcore ile mongodb kullanimi  mongodb yapilandirma adimlari Ddatabase: okuma , guncelleme ve ekleme servisleri eklenmesi controller yazilmasi kontrol edilmesi kapanis :D  Bolum 2 Frontend React Projesinin yapilandirirmasi  gerekli programlarim kurulu olup olmadigi kontrolu typescript destekli bir proje olusturma Kaynak  Onyuz  Anaekran ve islevler Component sinifi basit bir kullanim list halinde datayi alalim listelenen datadan data silme data ekleme update butonu [ekleme ve silme islemlerini barindiran yapida]  Bolum 3 Loglama yapilandirmasi Backend Log4Net Frontend [&ldquo;&rdquo;] Bolum 4 Unit Test Yazma "/>
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2020-03-23 22:44:28 &#43;0300 &#43;0300" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://turgayh.github.io/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /home/</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://turgayh.github.io/about/">About</a></li><li><a href="https://turgayh.github.io/posts/">Posts</a></li><li><a href="https://turgayh.github.io/resume/">Resume</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>One minute
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title">
+                <a href="https://turgayh.github.io/posts/2020/03/yazi-planlari/">Yazi Planlari</a>
+            </h1>
+
+            
+
+            <div class="post-content">
+                
+
+<hr />
+
+<h2 id="proje-tanitimi">Proje Tanitimi</h2>
+
+<ul>
+<li>React ve .netCore ile CRUD tabanli proje.</li>
+<li>Uygulamanin temel islevi uzerine</li>
+<li>Kullanilan teknolojiler : Docker , ReactJS, .netCore , MongoDB.</li>
+<li>kullanilan ortamlar : VS2019, VS Code ,Docker Desktop, Node</li>
+</ul>
+
+<h1 id="bolum-1-backend">Bolum 1 Backend</h1>
+
+<h2 id="asp-netcore-webapi-projesinin-kurulumu">ASP.netcore webapi projesinin kurulumu</h2>
+
+<ul>
+<li>ilk asama</li>
+<li>yapinlandirmalari</li>
+<li>CORS yapilandirmasi</li>
+</ul>
+
+<h2 id="mongodb-kurulumu">MongoDB kurulumu</h2>
+
+<ul>
+<li>localde docker uzeirnde mongodb olusturma</li>
+<li>ilk db ve icersine collection olusturma</li>
+<li>ornek insert islemleri</li>
+<li>ornek okuma islemleri</li>
+</ul>
+
+<h2 id="asp-netcore-ile-mongodb-kullanimi">ASP.netcore ile mongodb kullanimi</h2>
+
+<ul>
+<li>mongodb yapilandirma adimlari</li>
+<li>Ddatabase: okuma , guncelleme ve ekleme servisleri eklenmesi</li>
+<li>controller yazilmasi</li>
+<li>kontrol edilmesi kapanis :D</li>
+</ul>
+
+<h1 id="bolum-2-frontend">Bolum 2 Frontend</h1>
+
+<h2 id="react-projesinin-yapilandirirmasi">React Projesinin yapilandirirmasi</h2>
+
+<ul>
+<li>gerekli programlarim kurulu olup olmadigi kontrolu</li>
+<li>typescript destekli bir proje olusturma</li>
+<li><a href="https://www.pluralsight.com/guides/typescript-react-getting-started" target="_blank">Kaynak</a></li>
+</ul>
+
+<h2 id="onyuz">Onyuz</h2>
+
+<ul>
+<li>Anaekran ve islevler</li>
+<li>Component sinifi</li>
+<li>basit bir kullanim</li>
+<li>list halinde datayi alalim</li>
+<li>listelenen datadan data silme</li>
+<li>data ekleme</li>
+<li>update butonu [ekleme ve silme islemlerini barindiran yapida]</li>
+</ul>
+
+<h1 id="bolum-3-loglama-yapilandirmasi">Bolum 3 Loglama yapilandirmasi</h1>
+
+<h2 id="backend-log4net">Backend Log4Net</h2>
+
+<h2 id="frontend">Frontend [&ldquo;&rdquo;]</h2>
+
+<h1 id="bolum-4-unit-test-yazma">Bolum 4 Unit Test Yazma</h1>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://turgayh.github.io/tags/plan">plan</a></span><span class="tag"><a href="https://turgayh.github.io/tags/yazi">yazi</a></span>
+                </p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>141 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-03-23 19:44 &#43;0000</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h"></span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+                        <span class="button previous">
+                            <a href="https://turgayh.github.io/posts/2020/03/react-ve-asp.net-core-kullanarak-crud-tabanli-liste-uygulamasi/">
+                                <span class="button__icon">←</span>
+                                <span class="button__text">React ve ASP.NET core kullanarak CRUD tabanli liste uygulamasi</span>
+                            </a>
+                        </span>
+                    
+
+                    
+                </div>
+            </div>
+        
+            <div id="comments" class="thin">
+                <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-turgayh-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            </div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="https://turgayh.github.io">Hakan Turgay</a></span>
+            
+            
+                <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener"></a></span>
+            
+            <span> <a href="https://turgayh.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="https://turgayh.github.io/bundle.min.5c2f64632321fe361557377f6c5eb763531be2d7d69d897575d624ede040820dc17decf1350779061fd11db3ad89467cbddb12a07d171581667761c6f5ce547b.js" integrity="sha512-XC9kYyMh/jYVVzd/bF63Y1Mb4tfWnYl1ddYk7eBAgg3BfezxNQd5Bh/RHbOtiUZ8vdsSoH0XFYFmd2HG9c5Uew=="></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-162285660-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+
+
+    </body>
+</html>
