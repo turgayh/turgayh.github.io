@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://turgayh.github.io/posts/2020/07/problem-cozumu-1/</loc>
+    <lastmod>2020-07-04T18:59:43+03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://turgayh.github.io/resume/</loc>
   </url>
   
@@ -13,6 +18,13 @@
   
   <url>
     <loc>https://turgayh.github.io/</loc>
+    <lastmod>2020-07-04T18:59:43+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://turgayh.github.io/posts/</loc>
+    <lastmod>2020-07-04T18:59:43+03:00</lastmod>
     <priority>0</priority>
   </url>
   
