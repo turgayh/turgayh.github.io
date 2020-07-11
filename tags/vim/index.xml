@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vim on Hakan Turgay</title>
+    <link>https://turgayh.github.io/tags/vim/</link>
+    <description>Recent content in Vim on Hakan Turgay</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;/a&gt;</copyright>
+    <lastBuildDate>Sat, 11 Jul 2020 22:47:08 +0300</lastBuildDate>
+    
+	<atom:link href="https://turgayh.github.io/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Go Language Challenge</title>
+      <link>https://turgayh.github.io/posts/2020/07/go-language-challenge/</link>
+      <pubDate>Sat, 11 Jul 2020 22:47:08 +0300</pubDate>
+      
+      <guid>https://turgayh.github.io/posts/2020/07/go-language-challenge/</guid>
+      <description>Go Programlama  Go ile neler yapabilirim diye ciktim bu yola bakalim ne cikicak.. Go kendi sitesinde yer alan tanimi ile baslayalim
+ Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.
+ Tutorial uzerinden bu vurgulu kelimeleri dusunerek gecicem bakalim hangi durumlar icin evet dogru diyebilecegim.
+  Lokal Kurulumlar ve Vim Setup Kendi resmi adresinden Go indirebilirsiniz https://golang.org Editor olarak Vim kullanicagim.</description>
+    </item>
+    
+  </channel>
+</rss>
