@@ -6,8 +6,137 @@
         <description>Recent content in Posts on Hakan Turgay</description>
         <generator>Hugo -- gohugo.io</generator>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;/a&gt;</copyright>
-        <lastBuildDate>Sun, 12 Jul 2020 09:34:27 +0300</lastBuildDate>
+        <lastBuildDate>Sun, 12 Jul 2020 14:23:31 +0300</lastBuildDate>
         <atom:link href="https://turgayh.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Hugo Github ve CircleCI ile github-pages sayfasi olusturmak-[2]</title>
+            <link>https://turgayh.github.io/posts/2020/07/hugo-github-ve-circleci-ile-github-pages-sayfasi-olusturmak-2/</link>
+            <pubDate>Sun, 12 Jul 2020 14:23:31 +0300</pubDate>
+            
+            <guid>https://turgayh.github.io/posts/2020/07/hugo-github-ve-circleci-ile-github-pages-sayfasi-olusturmak-2/</guid>
+            <description>Yazinin ilk kisminda blog reposunu olusturduk simdi CircleCI ile baglantisina bakalim. Burda CircleCI baska alternatifler de uygulanabilinir. Amac bir pipeline yapisi olusturmak ve anlamak .
+https://circleci.com/vcs-authorize/ sayfasinda Github ile login olalim , ilerki ekranda github baglanmaya calisacak ve izin isteyecek verelim.
+ Add project ile projemizi sectikten sonra altaki gibi bir ekran cikicak bu ekranda bazi projeler icin hazir template yapilar var biz hello-world olani secelim .   blog reposuna daha once bu islemi yaptigim icin baska bir repo sectim .</description>
+            <content type="html"><![CDATA[
+
+<p>Yazinin ilk kisminda blog reposunu olusturduk simdi CircleCI ile baglantisina bakalim. Burda CircleCI baska alternatifler de uygulanabilinir. Amac bir pipeline yapisi olusturmak ve anlamak .</p>
+
+<p><strong><a href="https://circleci.com/vcs-authorize/" target="_blank">https://circleci.com/vcs-authorize/</a></strong> sayfasinda Github ile login olalim ,  ilerki ekranda github baglanmaya calisacak ve izin isteyecek verelim.</p>
+
+<ul>
+<li>Add project ile projemizi sectikten sonra altaki gibi bir ekran cikicak bu ekranda bazi projeler icin hazir template yapilar var biz hello-world olani secelim .</li>
+</ul>
+
+<p><img src="../../../../images/circleCI-first.PNG" alt="circleCI" /></p>
+
+<ul>
+<li><strong>blog</strong> reposuna daha once bu islemi yaptigim icin baska bir repo sectim .. Usteki adimi yaptiktan sonra Pull Request istegi olusturup onaylamamiz gerek  <a href="https://github.com/turgayh/JavaScript-Algorithm/pull/1" target="_blank">https://github.com/turgayh/JavaScript-Algorithm/pull/1</a> ornek PR istegine bu linkten bakabilirsiniz.</li>
+<li>Hersey tamam artik . repomuzun root dizininde yer alan .circleci klasoru altinda config.yml dosyasi acalim ve icerigi temizleyelim ..</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">version: <span style="color:#ae81ff">2</span>
+jobs:
+  build:
+    docker:
+      - image: felicianotech/docker-hugo
+    working_directory: ~/project</code></pre></div>
+<ul>
+<li>Hugo frameworkun docker image iceren project directory ile bir calisma ortami</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">   steps:
+      - checkout
+      - run:
+          name: <span style="color:#e6db74">&#34;Run Hugo&#34;</span>
+          command: |
+            git submodule add https://github.com/turgayh/hugo-theme-hello-friend-ng.git themes/hello-friend-custom 
+            hugo -D
+            ls ./public</code></pre></div>
+<ul>
+<li>blog reposu icersine submodule olarak temamizi ekleyelim.Burda <strong>hello-friend-custom</strong> dikkat edelim burasi degistirilebilir. Ben tema ana projeden forklayip submodule olarak onu kullandigimdan ismini degistirdim haliyle config.toml icersindeki tema ismi de degisecek.</li>
+<li>hugo ile blog reposunu derleyip public isminde ciktinin olusup olusmadigi kontrol edilir</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">      - run:
+          name: <span style="color:#e6db74">&#34;Clone Website&#34;</span>
+          command: |
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>CIRCLE_BRANCH<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;master&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+              mkdir www
+              cd www
+              git clone https://github.com/turgayh/turgayh.github.io.git
+              cd turgayh.github.io
+              rm -r *
+              cp -r ../../public/* ./
+              ls -la
+            <span style="color:#66d9ef">fi</span></code></pre></div>
+<ul>
+<li>www dizini icersine github-pages sayfasi alinir ve icerigi silinir yeni icerik olarak bi onceki adimda olusturulan public icersinde dosyalar eklenir</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">      - run:
+          name: <span style="color:#e6db74">&#34;Update Website&#34;</span>
+          command: |
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>CIRCLE_BRANCH<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;master&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>  
+              git config --global user.email <span style="color:#e6db74">&#34;turgayh@itu.edu.tr&#34;</span>
+              git config --global user.name <span style="color:#e6db74">&#34;turgayh&#34;</span>
+              cd ./www/turgayh.github.io
+              git add .
+              git commit -m <span style="color:#e6db74">&#34;Circle CI Update Website | Build Number:</span><span style="color:#e6db74">${</span>CIRCLE_BUILD_NUM<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+              git push -q https://<span style="color:#e6db74">${</span>DEPLOY_KEY<span style="color:#e6db74">}</span>@github.com/turgayh/turgayh.github.io.git master
+
+            <span style="color:#66d9ef">fi</span></code></pre></div>
+<ul>
+<li>github-pages icersi guncellendi ve bunu commit etmemiz gerek bunu yine CircleCI ile yapicagiz usteki kod parcaciklarinda <strong>${DEPLOY_KEY}</strong> parametresi istenilen github projesinde ozel olarak uretilip circCI icersine parametre olarak verilmelidir .</li>
+<li><strong>${DEPLOY_KEY}</strong> degeri  github sayfasinda  settings&gt;Personal Access Token &gt; Generate Token ile olusturulur.</li>
+<li>olusturulan token CircleCI icersinde Environment Variables alanina eklenir</li>
+</ul>
+
+<p><img src="../../../../images/token.PNG" alt="circleCI" /></p>
+
+<ul>
+<li>blog reposu hazir artik pushlanir ve circleCI uzerinden build olacak mi diye kontrol edebilirsiniz .
+<img src="../../../../images/success-build.PNG" alt="SuccessBuild" /></li>
+</ul>
+
+<h3 id="config-yml">config.yml</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">version: <span style="color:#ae81ff">2</span>
+jobs:
+  build:
+    docker:
+      - image: felicianotech/docker-hugo
+    working_directory: ~/project
+    steps:
+      - checkout
+      - run:
+          name: <span style="color:#e6db74">&#34;Run Hugo&#34;</span>
+          command: |
+            git submodule add https://github.com/turgayh/hugo-theme-hello-friend-ng.git themes/hello-friend-custom 
+            hugo -D
+            ls ./public
+
+      - run:
+          name: <span style="color:#e6db74">&#34;Clone Website&#34;</span>
+          command: |
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>CIRCLE_BRANCH<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;master&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>		
+              mkdir www		
+              cd www		
+              git clone https://github.com/turgayh/turgayh.github.io.git		
+              cd turgayh.github.io		
+              rm -r *		
+              cp -r ../../public/* ./		
+              ls -la		
+            <span style="color:#66d9ef">fi</span>
+      
+      - run:
+          name: <span style="color:#e6db74">&#34;Update Website&#34;</span>
+          command: |
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>CIRCLE_BRANCH<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;master&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>  
+              git config --global user.email <span style="color:#e6db74">&#34;turgayh@itu.edu.tr&#34;</span>
+              git config --global user.name <span style="color:#e6db74">&#34;turgayh&#34;</span>
+              cd ./www/turgayh.github.io
+              git add .
+              git commit -m <span style="color:#e6db74">&#34;Circle CI Update Website | Build Number:</span><span style="color:#e6db74">${</span>CIRCLE_BUILD_NUM<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+              git push -q https://<span style="color:#e6db74">${</span>DEPLOY_KEY<span style="color:#e6db74">}</span>@github.com/turgayh/turgayh.github.io.git master
+              
+            <span style="color:#66d9ef">fi</span></code></pre></div>]]></content>
+        </item>
         
         <item>
             <title>Hugo Github ve CircleCI ile github-pages sayfasi olusturmak-[1]</title>
