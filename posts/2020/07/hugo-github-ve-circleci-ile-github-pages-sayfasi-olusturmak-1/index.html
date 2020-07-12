@@ -5,19 +5,18 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="Hakan Turgay ">
-<meta name="description" content="Go Programlama  Go ile neler yapabilirim diye ciktim bu yola bakalim ne cikicak.. Go kendi sitesinde yer alan tanimi ile baslayalim
- Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.
- Tutorial uzerinden bu vurgulu kelimeleri dusunerek gecicem bakalim hangi durumlar icin evet dogru diyebilecegim.
-  Lokal Kurulumlar ve Vim Setup Kendi resmi adresinden Go indirebilirsiniz https://golang.org Editor olarak Vim kullanicagim." />
-<meta name="keywords" content="Go Language-, Python, ReactJS, .NET Core, Testing, go, programming, vim" />
+<meta name="description" content="Hugo Framework : Statik websitesi yapmanizi saglayan bir araci diye dusunebiliriz.Blog yazilari icin ideal bir ortam .Eger markdown ile blog yazarim ve herseyi kod kanaliyla yonetirim diyorsaniz uygun bir ortamdir.
+ Bu blog sayfasi da belirticegim yontemle calisiyor.Olabildigince islemleri otomatik hale getirdim .   2 farkli github reposu acilir, bunlardan biri github-pages olmali yani [kullaniciadi.github.io] adresine icerik barindiracak repo olmali. Bu adresten nasil olusturacaginiz yaziyor..
+ Repo icersinde sadece README." />
+<meta name="keywords" content="Go Language-, Python, ReactJS, .NET Core, Testing, Github, CircleCI, Automation, Pipline, Hugo Framework, Go Language, Blog" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="#252627" />
-<link rel="canonical" href="https://turgayh.github.io/posts/2020/07/go-language-challenge/" />
+<link rel="canonical" href="https://turgayh.github.io/posts/2020/07/hugo-github-ve-circleci-ile-github-pages-sayfasi-olusturmak-1/" />
 
 
     <title>
         
-            Go Language Challenge :: Hakan Turgay 
+            Hugo Github ve CircleCI ile github-pages sayfasi olusturmak-[1] :: Hakan Turgay 
         
     </title>
 
@@ -49,29 +48,27 @@
 
 
 
-<meta itemprop="name" content="Go Language Challenge">
-<meta itemprop="description" content="Go Programlama  Go ile neler yapabilirim diye ciktim bu yola bakalim ne cikicak.. Go kendi sitesinde yer alan tanimi ile baslayalim
- Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.
- Tutorial uzerinden bu vurgulu kelimeleri dusunerek gecicem bakalim hangi durumlar icin evet dogru diyebilecegim.
-  Lokal Kurulumlar ve Vim Setup Kendi resmi adresinden Go indirebilirsiniz https://golang.org Editor olarak Vim kullanicagim.">
+<meta itemprop="name" content="Hugo Github ve CircleCI ile github-pages sayfasi olusturmak-[1]">
+<meta itemprop="description" content="Hugo Framework : Statik websitesi yapmanizi saglayan bir araci diye dusunebiliriz.Blog yazilari icin ideal bir ortam .Eger markdown ile blog yazarim ve herseyi kod kanaliyla yonetirim diyorsaniz uygun bir ortamdir.
+ Bu blog sayfasi da belirticegim yontemle calisiyor.Olabildigince islemleri otomatik hale getirdim .   2 farkli github reposu acilir, bunlardan biri github-pages olmali yani [kullaniciadi.github.io] adresine icerik barindiracak repo olmali. Bu adresten nasil olusturacaginiz yaziyor..
+ Repo icersinde sadece README.">
 
 
-<meta itemprop="datePublished" content="2020-07-11T22:47:08&#43;03:00" />
-<meta itemprop="dateModified" content="2020-07-11T22:47:08&#43;03:00" />
-<meta itemprop="wordCount" content="135">
+<meta itemprop="datePublished" content="2020-07-12T09:34:27&#43;03:00" />
+<meta itemprop="dateModified" content="2020-07-12T09:34:27&#43;03:00" />
+<meta itemprop="wordCount" content="174">
 
 
 
-<meta itemprop="keywords" content="go,programming,vim," />
+<meta itemprop="keywords" content="Github,CircleCI,Automation,Pipline,Hugo Framework,Go Language,Blog," />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://turgayh.github.io"/>
 
-<meta name="twitter:title" content="Go Language Challenge"/>
-<meta name="twitter:description" content="Go Programlama  Go ile neler yapabilirim diye ciktim bu yola bakalim ne cikicak.. Go kendi sitesinde yer alan tanimi ile baslayalim
- Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.
- Tutorial uzerinden bu vurgulu kelimeleri dusunerek gecicem bakalim hangi durumlar icin evet dogru diyebilecegim.
-  Lokal Kurulumlar ve Vim Setup Kendi resmi adresinden Go indirebilirsiniz https://golang.org Editor olarak Vim kullanicagim."/>
+<meta name="twitter:title" content="Hugo Github ve CircleCI ile github-pages sayfasi olusturmak-[1]"/>
+<meta name="twitter:description" content="Hugo Framework : Statik websitesi yapmanizi saglayan bir araci diye dusunebiliriz.Blog yazilari icin ideal bir ortam .Eger markdown ile blog yazarim ve herseyi kod kanaliyla yonetirim diyorsaniz uygun bir ortamdir.
+ Bu blog sayfasi da belirticegim yontemle calisiyor.Olabildigince islemleri otomatik hale getirdim .   2 farkli github reposu acilir, bunlardan biri github-pages olmali yani [kullaniciadi.github.io] adresine icerik barindiracak repo olmali. Bu adresten nasil olusturacaginiz yaziyor..
+ Repo icersinde sadece README."/>
 
 
 
@@ -79,7 +76,7 @@
 
 
 
-    <meta property="article:published_time" content="2020-07-11 22:47:08 &#43;0300 &#43;0300" />
+    <meta property="article:published_time" content="2020-07-12 09:34:27 &#43;0300 &#43;0300" />
 
 
 
@@ -153,48 +150,50 @@
 
     <article>
       <h1 class="post-title">
-        <a href="https://turgayh.github.io/posts/2020/07/go-language-challenge/">Go Language Challenge</a>
+        <a href="https://turgayh.github.io/posts/2020/07/hugo-github-ve-circleci-ile-github-pages-sayfasi-olusturmak-1/">Hugo Github ve CircleCI ile github-pages sayfasi olusturmak-[1]</a>
       </h1>
 
       
 
       <div class="post-content">
-        
-
-<h3 id="go-programlama">Go Programlama</h3>
+        <p><br/><br/>
+<img src="../../../../images/hugo-framework.png" alt="Hugo FrameWork" />
+<br/><br/>
+<strong>Hugo Framework :</strong> Statik websitesi yapmanizi saglayan bir araci diye dusunebiliriz.Blog yazilari icin ideal bir ortam .Eger markdown ile blog yazarim ve herseyi kod kanaliyla yonetirim diyorsaniz uygun bir ortamdir.</p>
 
 <ul>
-<li><p>Go ile neler yapabilirim diye ciktim bu yola bakalim ne cikicak.. Go kendi sitesinde yer alan tanimi ile baslayalim</p>
-
-<blockquote>
-<p>Go is an open source programming language that makes it easy to build <strong>simple</strong>, <strong>reliable</strong>, and <strong>efficient</strong> software.</p>
-</blockquote></li>
-
-<li><p>Tutorial uzerinden bu vurgulu kelimeleri dusunerek gecicem bakalim hangi durumlar icin evet dogru diyebilecegim.</p></li>
+<li>Bu blog sayfasi da belirticegim yontemle calisiyor.Olabildigince islemleri otomatik hale getirdim .</li>
 </ul>
 
-<h3 id="lokal-kurulumlar-ve-vim-setup">Lokal Kurulumlar ve Vim Setup</h3>
+<ol>
+<li><p>2 farkli github reposu acilir, bunlardan biri github-pages olmali yani   [kullaniciadi.github.io] adresine icerik barindiracak repo olmali.
+<a href="https://pages.github.com" target="_blank">Bu adresten nasil olusturacaginiz yaziyor.</a>.</p></li>
 
-<p>Kendi resmi adresinden Go indirebilirsiniz <a href="https://golang.org" target="_blank"><strong>https://golang.org</strong></a> Editor olarak Vim kullanicagim. Gelismis IDE veya text editor kullanabilirsiniz ama olaya biraz daha derinden girismek icin VIM kullanmak iyidir ornek ekran goruntu belki ilginizi ceker :D.</p>
+<li><p>Repo icersinde sadece README.md dosyalari kalmali eger varsa baska dosya silebilirsiniz .</p></li>
 
-<p><br></br>
-<img src="../../../../images/vim-example-screen.png" alt="&quot;Vim-Screen&quot;" /></p>
+<li><p>Ben <strong>blog</strong> ve <strong>turgayh.github.io</strong>  diye 2 repo olusturdum.</p></li>
 
-<p>Vim kurulumunu MacOS uzerinde yaptim windows nasil olur bilemem
-.vimrc dosyami ise github ![<strong>Link</strong>] ulasabilirsiniz.</p>
-
-<h3 id="tutorial-incelemesi-1">Tutorial Incelemesi 1</h3>
-
-<p>Dokumanin ilk asamasi dilin sozdizimi uzerine ornekler olucak .</p>
-
-<h4 id="hello-world">Hello World!!</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Go" data-lang="Go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
-<span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
-
-<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>(){
-    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Hello, World!!&#34;</span>)
-}</code></pre></div>
-<p>Ufak bir giris yaptik Go diline.</p>
+<li><p>Lokalde hugo projesini olusturalim . <a href="https://gohugo.io/getting-started/quick-start/" target="_blank">Quick Start Hugo</a></p></li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    hugo new site blog</code></pre></div>
+<p>blog reposunun icerigini olusturduk.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">cd blog
+git init
+git submodule add https://github.com/rhazdon/hugo-theme-hello-friend-ng.git themes/hello-friend-ng </code></pre></div>
+<ul>
+<li>Temayi submodule olarak git projemize ekledim . Beklenen themes klasoru altinda hello-friend-ng adinda temamizin gelmesi</li>
+<li><strong>config.toml</strong> dosyasi sitenizin ayarlar kismini barindiriyor. Bu dosya icerisinde temamizi belirtmek gereklidir ilk asamada themes/hello-friend-th/exampleSite  icersindeki config.toml icerigini kullanabiliriz.
+<code>shell
+hugo new posts/my-first-post.md
+</code></li>
+<li>ilk blog postu ornegi md formatinda content/posts klasoru altinda olustur.
+<code>shell
+hugo -D server
+</code></li>
+<li>Eger hersey yolunda gitmis ise <a href="http://localhost:1313" target="_blank">http://localhost:1313</a>  alttaki ciktiyi alacaksiniz.  <strong>blog</strong> reposunu commit edebiliriz.
+-
+<img src="../../../../images/hugo-example.png" alt="" title="Ornek Tema ile sonuc" /></li>
+</ul>
 
       </div>
     </article>
@@ -206,7 +205,7 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon">
             <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
             <line x1="7" y1="7" x2="7" y2="7"></line>
-          </svg><span class="tag"><a href="https://turgayh.github.io/tags/go/">go</a></span><span class="tag"><a href="https://turgayh.github.io/tags/programming/">programming</a></span><span class="tag"><a href="https://turgayh.github.io/tags/vim/">vim</a></span>
+          </svg><span class="tag"><a href="https://turgayh.github.io/tags/github/">Github</a></span><span class="tag"><a href="https://turgayh.github.io/tags/circleci/">CircleCI</a></span><span class="tag"><a href="https://turgayh.github.io/tags/automation/">Automation</a></span><span class="tag"><a href="https://turgayh.github.io/tags/pipline/">Pipline</a></span><span class="tag"><a href="https://turgayh.github.io/tags/hugo-framework/">Hugo Framework</a></span><span class="tag"><a href="https://turgayh.github.io/tags/go-language/">Go Language</a></span><span class="tag"><a href="https://turgayh.github.io/tags/blog/">Blog</a></span>
         </p>
 
       <p>
@@ -217,7 +216,7 @@
           <line x1="16" y1="17" x2="8" y2="17"></line>
           <polyline points="10 9 9 9 8 9"></polyline>
         </svg>
-        135 Words
+        174 Words
       </p>
 
       <p>
@@ -227,7 +226,7 @@
           <line x1="8" y1="2" x2="8" y2="6"></line>
           <line x1="3" y1="10" x2="21" y2="10"></line>
         </svg>
-        2020-07-11 19:47 &#43;0000
+        2020-07-12 06:34 &#43;0000
       </p>
         <p>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit">
@@ -236,8 +235,8 @@
             <line x1="17.01" y1="12" x2="22.96" y2="12"></line>
           </svg>
 
-          <a href="7131211577dee5d8995e8fc6fc61453fdf8726a5" target="_blank" rel="noopener">7131211</a>
-          @ 2020-07-11
+          <a href="bf47966f3fcb8d1348d78c4564ce6679197f1d2c" target="_blank" rel="noopener">bf47966</a>
+          @ 2020-07-12
         </p>
     </div>
 
@@ -250,18 +249,11 @@
 
         <div class="pagination__buttons">
           
-            <span class="button previous">
-              <a href="https://turgayh.github.io/posts/2020/07/hugo-github-ve-circleci-ile-github-pages-sayfasi-olusturmak-1/">
-                <span class="button__icon">←</span>
-                <span class="button__text">Hugo Github ve CircleCI ile github-pages sayfasi olusturmak-[1]</span>
-              </a>
-            </span>
-          
 
           
             <span class="button next">
-              <a href="https://turgayh.github.io/posts/2020/07/algoritma-cozumu---orta/">
-                <span class="button__text">Algoritma Cozumu - Orta</span>
+              <a href="https://turgayh.github.io/posts/2020/07/go-language-challenge/">
+                <span class="button__text">Go Language Challenge</span>
                 <span class="button__icon">→</span>
               </a>
             </span>

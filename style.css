@@ -7,3 +7,8 @@
     background-color: blue;
     font-weight: bold;
 }
+
+.red {
+    background-color:red;
+    color:yellow;
+}

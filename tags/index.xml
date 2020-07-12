@@ -6,10 +6,46 @@
     <description>Recent content in Tags on Hakan Turgay</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 11 Jul 2020 22:47:08 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jul 2020 09:34:27 +0300</lastBuildDate>
     
 	<atom:link href="https://turgayh.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Automation</title>
+      <link>https://turgayh.github.io/tags/automation/</link>
+      <pubDate>Sun, 12 Jul 2020 09:34:27 +0300</pubDate>
+      
+      <guid>https://turgayh.github.io/tags/automation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blog</title>
+      <link>https://turgayh.github.io/tags/blog/</link>
+      <pubDate>Sun, 12 Jul 2020 09:34:27 +0300</pubDate>
+      
+      <guid>https://turgayh.github.io/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Circleci</title>
+      <link>https://turgayh.github.io/tags/circleci/</link>
+      <pubDate>Sun, 12 Jul 2020 09:34:27 +0300</pubDate>
+      
+      <guid>https://turgayh.github.io/tags/circleci/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Github</title>
+      <link>https://turgayh.github.io/tags/github/</link>
+      <pubDate>Sun, 12 Jul 2020 09:34:27 +0300</pubDate>
+      
+      <guid>https://turgayh.github.io/tags/github/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Go</title>
@@ -17,6 +53,33 @@
       <pubDate>Sat, 11 Jul 2020 22:47:08 +0300</pubDate>
       
       <guid>https://turgayh.github.io/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Go Language</title>
+      <link>https://turgayh.github.io/tags/go-language/</link>
+      <pubDate>Sun, 12 Jul 2020 09:34:27 +0300</pubDate>
+      
+      <guid>https://turgayh.github.io/tags/go-language/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo Framework</title>
+      <link>https://turgayh.github.io/tags/hugo-framework/</link>
+      <pubDate>Sun, 12 Jul 2020 09:34:27 +0300</pubDate>
+      
+      <guid>https://turgayh.github.io/tags/hugo-framework/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pipline</title>
+      <link>https://turgayh.github.io/tags/pipline/</link>
+      <pubDate>Sun, 12 Jul 2020 09:34:27 +0300</pubDate>
+      
+      <guid>https://turgayh.github.io/tags/pipline/</guid>
       <description></description>
     </item>
     

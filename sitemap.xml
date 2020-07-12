@@ -3,8 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://turgayh.github.io/posts/2020/07/hugo-github-ve-circleci-ile-github-pages-sayfasi-olusturmak-1/</loc>
+    <lastmod>2020-07-12T11:10:21+03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://turgayh.github.io/posts/2020/07/go-language-challenge/</loc>
     <lastmod>2020-07-12T01:00:18+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://turgayh.github.io/algoritma/algoritma-cozumu-2/</loc>
+    <lastmod>2020-07-12T11:10:21+03:00</lastmod>
   </url>
   
   <url>
@@ -18,7 +28,37 @@
   </url>
   
   <url>
+    <loc>https://turgayh.github.io/algoritma/</loc>
+    <lastmod>2020-07-12T11:10:21+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://turgayh.github.io/tags/automation/</loc>
+    <lastmod>2020-07-12T11:10:21+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://turgayh.github.io/tags/blog/</loc>
+    <lastmod>2020-07-12T11:10:21+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://turgayh.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://turgayh.github.io/tags/circleci/</loc>
+    <lastmod>2020-07-12T11:10:21+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://turgayh.github.io/tags/github/</loc>
+    <lastmod>2020-07-12T11:10:21+03:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -29,14 +69,32 @@
   </url>
   
   <url>
+    <loc>https://turgayh.github.io/tags/go-language/</loc>
+    <lastmod>2020-07-12T11:10:21+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://turgayh.github.io/</loc>
-    <lastmod>2020-07-12T01:00:18+03:00</lastmod>
+    <lastmod>2020-07-12T11:10:21+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://turgayh.github.io/tags/hugo-framework/</loc>
+    <lastmod>2020-07-12T11:10:21+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://turgayh.github.io/tags/pipline/</loc>
+    <lastmod>2020-07-12T11:10:21+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://turgayh.github.io/posts/</loc>
-    <lastmod>2020-07-12T01:00:18+03:00</lastmod>
+    <lastmod>2020-07-12T11:10:21+03:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -48,7 +106,7 @@
   
   <url>
     <loc>https://turgayh.github.io/tags/</loc>
-    <lastmod>2020-07-12T01:00:18+03:00</lastmod>
+    <lastmod>2020-07-12T11:10:21+03:00</lastmod>
     <priority>0</priority>
   </url>
   

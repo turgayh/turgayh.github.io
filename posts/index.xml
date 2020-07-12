@@ -6,8 +6,58 @@
         <description>Recent content in Posts on Hakan Turgay</description>
         <generator>Hugo -- gohugo.io</generator>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;/a&gt;</copyright>
-        <lastBuildDate>Sat, 11 Jul 2020 22:47:08 +0300</lastBuildDate>
+        <lastBuildDate>Sun, 12 Jul 2020 09:34:27 +0300</lastBuildDate>
         <atom:link href="https://turgayh.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Hugo Github ve CircleCI ile github-pages sayfasi olusturmak-[1]</title>
+            <link>https://turgayh.github.io/posts/2020/07/hugo-github-ve-circleci-ile-github-pages-sayfasi-olusturmak-1/</link>
+            <pubDate>Sun, 12 Jul 2020 09:34:27 +0300</pubDate>
+            
+            <guid>https://turgayh.github.io/posts/2020/07/hugo-github-ve-circleci-ile-github-pages-sayfasi-olusturmak-1/</guid>
+            <description>Hugo Framework : Statik websitesi yapmanizi saglayan bir araci diye dusunebiliriz.Blog yazilari icin ideal bir ortam .Eger markdown ile blog yazarim ve herseyi kod kanaliyla yonetirim diyorsaniz uygun bir ortamdir.
+ Bu blog sayfasi da belirticegim yontemle calisiyor.Olabildigince islemleri otomatik hale getirdim .   2 farkli github reposu acilir, bunlardan biri github-pages olmali yani [kullaniciadi.github.io] adresine icerik barindiracak repo olmali. Bu adresten nasil olusturacaginiz yaziyor..
+ Repo icersinde sadece README.</description>
+            <content type="html"><![CDATA[<p><br/><br/>
+<img src="../../../../images/hugo-framework.png" alt="Hugo FrameWork" />
+<br/><br/>
+<strong>Hugo Framework :</strong> Statik websitesi yapmanizi saglayan bir araci diye dusunebiliriz.Blog yazilari icin ideal bir ortam .Eger markdown ile blog yazarim ve herseyi kod kanaliyla yonetirim diyorsaniz uygun bir ortamdir.</p>
+
+<ul>
+<li>Bu blog sayfasi da belirticegim yontemle calisiyor.Olabildigince islemleri otomatik hale getirdim .</li>
+</ul>
+
+<ol>
+<li><p>2 farkli github reposu acilir, bunlardan biri github-pages olmali yani   [kullaniciadi.github.io] adresine icerik barindiracak repo olmali.
+<a href="https://pages.github.com" target="_blank">Bu adresten nasil olusturacaginiz yaziyor.</a>.</p></li>
+
+<li><p>Repo icersinde sadece README.md dosyalari kalmali eger varsa baska dosya silebilirsiniz .</p></li>
+
+<li><p>Ben <strong>blog</strong> ve <strong>turgayh.github.io</strong>  diye 2 repo olusturdum.</p></li>
+
+<li><p>Lokalde hugo projesini olusturalim . <a href="https://gohugo.io/getting-started/quick-start/" target="_blank">Quick Start Hugo</a></p></li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    hugo new site blog</code></pre></div>
+<p>blog reposunun icerigini olusturduk.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">cd blog
+git init
+git submodule add https://github.com/rhazdon/hugo-theme-hello-friend-ng.git themes/hello-friend-ng </code></pre></div>
+<ul>
+<li>Temayi submodule olarak git projemize ekledim . Beklenen themes klasoru altinda hello-friend-ng adinda temamizin gelmesi</li>
+<li><strong>config.toml</strong> dosyasi sitenizin ayarlar kismini barindiriyor. Bu dosya icerisinde temamizi belirtmek gereklidir ilk asamada themes/hello-friend-th/exampleSite  icersindeki config.toml icerigini kullanabiliriz.
+<code>shell
+hugo new posts/my-first-post.md
+</code></li>
+<li>ilk blog postu ornegi md formatinda content/posts klasoru altinda olustur.
+<code>shell
+hugo -D server
+</code></li>
+<li>Eger hersey yolunda gitmis ise <a href="http://localhost:1313" target="_blank">http://localhost:1313</a>  alttaki ciktiyi alacaksiniz.  <strong>blog</strong> reposunu commit edebiliriz.
+-
+<img src="../../../../images/hugo-example.png" alt="" title="Ornek Tema ile sonuc" /></li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>Go Language Challenge</title>
