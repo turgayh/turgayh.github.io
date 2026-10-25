@@ -1,0 +1,137 @@
+baseURL = "https://turgayh.github.io"
+title   = "Hakan Turgay"
+
+DefaultContentLanguage = "en"
+
+theme = "hello-friend-custom"
+
+[markup.highlight]
+  style = "monokai"
+
+
+rssLimit  = 10  # Maximum number of items in the RSS feed.
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
+
+
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
+
+buildDrafts  = false
+buildFuture  = false
+buildExpored = false
+canonifyURLs = true
+
+enableRobotsTXT = true
+enableGitInfo   = true
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = false
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = false
+
+[permalinks]
+  posts = "/posts/:year/:month/:title/"
+
+
+
+[taxonomies]
+  tag      = "tags"
+  category = "categories"
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
+  # Metadata mostly used in document's head
+  description = "It's  just have a some exprience on  programming "
+  keywords = "Go Language-, Python, ReactJS, .NET Core, Testing"
+  images = [""]
+
+  homeSubtitle = "Hi, I'm Hakan, a software developer based in Istanbul."
+
+  # Prefix of link to the git commit detail page. GitInfo must be enabled.
+  # gitUrl = ""
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Integrate Javascript files or stylesheets by adding the url to the external assets or by
+  # linking local files with their path relative to the static folder, e.g. "css/styles.css"
+  customCSS = ["static/style.css"]
+  customJS  = []
+
+  # Toggle this option need to rebuild SCSS, requires extended version of Hugo
+  justifyContent = false  # Set "text-align: justify" to .content.
+
+  # Directory name of your blog content (default is `content/posts`)
+  contentTypeName = "posts"
+
+  # Default theme "light" or "dark"
+  defaultTheme = "light"
+  themeColor = "#252627"
+
+  [params.author]
+    name = "Hakan Turgay"
+
+  # Colors for favicons
+  [params.favicon.color]
+    mask = "#252627"
+    msapplication = "#252627"
+    theme = "#252627"
+
+  [params.logo]
+    logoText     = "$ cd /home/"
+    logoHomeLink = "/"
+    # Set true to remove the logo cursor entirely.
+    # logoCursorDisabled = false
+    # Set to a valid CSS color to change the cursor in the logo.
+    # logoCursorColor    = "#67a2c9"
+    # Set to a valid CSS time value to change the animation duration, "0s" to disable.
+    # logoCursorAnimate  = "2s"
+
+  # Social icons
+  [[params.social]]
+    name = "twitter"
+    url  = "https://twitter.com/hakantrg"
+
+  [[params.social]]
+    name = "email"
+    url  = "mailto:hakantrg@outlook.com"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/turgayh"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://tr.linkedin.com/in/hakan-turğay"
+
+
+[languages]
+  [languages.en]
+    subtitle  = ""
+    weight    = 1
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener"></a>'
+
+[menu]
+  [[menu.main]]
+    identifier = "CV"
+    name       = "Resume"
+    url        = "resume/"
+  
+  [[menu.main]]
+    identifier = "posts"
+    name       = "Posts"
+    url        = "posts/"
+ 
+  [[menu.main]]
+    identifier = "quotes"
+    name       = "Quotes"
+    url        = "quotes/"
+  
