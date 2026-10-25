@@ -49,11 +49,11 @@ disableHugoGeneratorInject = false
   dateformNumTime = "2006-01-02 15:04 -0700"
 
   # Metadata mostly used in document's head
-  description = "It's  just have a some exprience on  programming "
-  keywords = "Go Language-, Python, ReactJS, .NET Core, Testing"
+  description = "Hakan Turgay, Senior Software Engineer building high-traffic backend systems with Go, Node.js and .NET."
+  keywords = "Go, Backend, Microservices, Node.js, .NET, AWS, Kafka"
   images = [""]
 
-  homeSubtitle = "Hi, I'm Hakan, a software developer based in Istanbul."
+  homeSubtitle = "Hi, I'm Hakan, a senior software engineer based in Istanbul. I build high-performance, high-traffic backend systems with Go, Node.js and .NET."
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
   # gitUrl = ""
